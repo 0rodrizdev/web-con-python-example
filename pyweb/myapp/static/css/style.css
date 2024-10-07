@@ -1,0 +1,152 @@
+/* Estilos Generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1d1f21; /* Color de fondo oscuro */
+    color: #f4f4f4; /* Color del texto */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* Altura mínima para centrar el contenido */
+}
+
+/* Estilos del Preloader */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(29, 31, 33, 0.9); /* Fondo oscuro */
+    display: flex;
+    flex-direction: column; /* Cambiar a columna para el texto y el botón */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Asegúrate de que esté por encima de otros elementos */
+}
+
+.loader {
+    border: 8px solid rgba(255, 255, 255, 0.1); /* Fondo del círculo */
+    border-radius: 50%;
+    border-top: 8px solid #61dafb; /* Color del borde superior */
+    width: 60px; /* Ancho del círculo */
+    height: 60px; /* Alto del círculo */
+    animation: spin 1s linear infinite; /* Animación de giro */
+}
+
+/* Animación de giro */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Estilos de la Barra de Navegación */
+nav {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque de fondo */
+    width: 100%;
+    padding: 10px 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra de la barra */
+}
+
+nav ul {
+    list-style: none; /* Sin viñetas */
+    padding: 0;
+    display: flex; /* Flexbox para alineación */
+    justify-content: center; /* Centrado de los elementos */
+}
+
+nav li {
+    margin: 0 15px; /* Espaciado entre los elementos */
+}
+
+nav a {
+    color: #f4f4f4; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Negrita */
+    transition: color 0.3s ease; /* Transición suave */
+}
+
+nav a:hover {
+    color: #61dafb; /* Color al pasar el ratón */
+}
+
+/* Estilo del Contenedor de la Imagen */
+.image-container {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 80%; /* Control del ancho de la imagen */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5); /* Sombra alrededor de la imagen */
+}
+
+/* Estilos del Contenedor de Texto */
+.text-container {
+    display: flex; /* Flexbox para los divs de texto */
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+}
+
+.text-div {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 20px;
+    margin: 10px;
+    max-width: 300px; /* Ancho máximo */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Sombra de los divs */
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+.text-div:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el ratón */
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0; /* Sin margen */
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5; /* Espaciado entre líneas */
+}
+
+/* Estilos del texto de carga */
+#preloader p {
+    color: #ffffff; /* Color blanco */
+    font-size: 1.2rem; /* Tamaño de fuente */
+    margin: 20px 0; /* Margen vertical */
+    text-align: center; /* Centrar texto */
+}
+
+/* Estilos del botón de Discord */
+.discord-button {
+    display: inline-flex; /* Hacer que el botón y el logo estén en línea */
+    align-items: center; /* Centrar el contenido del botón */
+    background-color: rgba(255, 255, 255, 0.1); /* Color de fondo verde suave */
+    color: white; /* Color de texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 1rem; /* Tamaño de fuente */
+    transition: background-color 0.3s; /* Transición para el cambio de color */
+}
+
+/* Efecto hover para el botón */
+.discord-button:hover {
+    background-color: #45a049; /* Color más oscuro al pasar el mouse */
+}
+
+/* Estilos del logo de Discord */
+.discord-logo {
+    width: 20px; /* Ancho del logo */
+    height: 20px; /* Alto del logo */
+    margin-right: 8px; /* Espaciado a la derecha del logo */
+}
